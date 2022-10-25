@@ -9,11 +9,9 @@
 <body>
     <h1>Skills</h1>
     <ul>
-      <% todos.forEach(function(t) { %>
+      <% skills.forEach(function(s) { %>
         <li>
-          <%= t.todo %>
-            - 
-          <%= t.done ? 'done' : 'not done' %>
+          <%= s %>
         </li>
       <% }); %>
     </ul>
