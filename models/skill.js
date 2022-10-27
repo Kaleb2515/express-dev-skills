@@ -8,3 +8,4 @@ const skills = ['HTML', 'CSS', 'Javascript']
     return skills;
   }
  
+  

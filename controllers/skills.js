@@ -14,3 +14,10 @@
     });
   }
  
+
+  function show(req, res) {
+    res.render('todos/show', {
+      todo: Todo.getOne(req.params.id),
+    });
+  }
+  
