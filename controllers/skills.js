@@ -6,7 +6,8 @@
  module.exports = {
    index,
    show,
-   new: newSkills
+   new: newSkills,
+   create
  };
 
   
@@ -17,7 +18,6 @@
 
   }
  
-
   function show(req, res) {
     res.render('skills/show', {
       todo: Todo.getOne(req.params.id),
@@ -28,3 +28,8 @@
     res.render('skills/new')
   }
   
+  function create(req, res) {
+    console.log(req.body);
+    // skills.create(req.body)
+    res.send('created')
+  } 
