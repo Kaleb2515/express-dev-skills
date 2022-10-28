@@ -1,9 +1,11 @@
 const skills = ['HTML','CSS','Javascript']
   
+
   module.exports = {
     getAll,
     getOne,
-    create
+    create,
+   deleteOne
   };
   
   function getAll() {
@@ -18,4 +20,11 @@ const skills = ['HTML','CSS','Javascript']
   function create(newSkills) {
     skills.push(newSkills)
     console.log(skills)
+   
+  }
+
+  function deleteOne(id){
+    const idx = todos.findIndex(
+      todo => skills.id === parseInt(id)); 
+      todos.splice(idx, 1); 
   }

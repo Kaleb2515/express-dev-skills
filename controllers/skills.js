@@ -7,7 +7,8 @@
    index,
    show,
    new: newSkills,
-   create
+   create,
+   deleteSkills
  };
 
   
@@ -33,3 +34,8 @@
     // skills.create(req.body)
     res.redirect('/skills')
   } 
+
+  function deleteSkills(req, res){
+    Todo.deleteOne(req.params.id); 
+    res.redirect('/skills');
+  }
