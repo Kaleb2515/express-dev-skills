@@ -31,5 +31,5 @@
   function create(req, res) {
     console.log(req.body);
     // skills.create(req.body)
-    res.send('created')
+    res.redirect('/skills')
   } 
